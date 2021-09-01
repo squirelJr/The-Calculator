@@ -21,12 +21,12 @@
       this.currentOperand = this.currentOperand.toString() + number.toString()
       }
     
-    chooseOperation(operation) {
+    chooseOperation(operation){
       if (this.currentOperand === ''){
        return
+      }
       if (this.previousOperand !== '') {
         this.compute()
-      }
       }
       this.operation = operation
       this.previousOperand = this.currentOperand
